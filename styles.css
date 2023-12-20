@@ -1,0 +1,130 @@
+:root {
+    --darklight: #0145a4;
+	--dark: #05152E;
+	--darker: #1F2937;
+	--darkest: #001E3C;
+	--grey: #6B7280;
+	--pink: #EC4899;
+	--purple: #8B5CF6;
+	--light: #EEE;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--light);
+    font-size: larger;
+}
+
+#main-container {
+    display: block ;
+    background-color: var(--grey);
+    text-align: center;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darker);
+    grid-area: nav;
+    position: sticky;
+    top: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    list-style-type: none;
+}
+
+li {
+    padding-right: 30px;
+}
+
+a {text-decoration: none;}
+
+#emoji{
+    grid-area: emoji;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 16vh;
+    width: 8vw;
+    background-color: var(--light);
+    border: 4px solid var(--darklight);
+    border-radius: 50%;
+    display: inline-block;
+}
+#btn {
+    grid-area: btn;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh 0 4vh 0;
+}
+#descr{
+    grid-area: descr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 4vh;
+    width: 2vw;
+    margin-top: 2vh;
+    background-color: var(--darklight);
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  #mouth {
+    height: 2vh;
+    width: 4vw;
+    background-color: var(--darklight);
+    border-radius: 0;
+    display: inline-block;
+  }
+
+  #btn-bad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #btn-good {
+    height: 6vh;
+    width: 10vh;
+    background-color: green;
+  }
+  #btn-bad {
+    height: 6vh;
+    width: 10vh;
+    background-color: red;
+  }
+
+  @media screen and (max-width: 768px) {
+
+    body {
+        background-color: var(--dark);
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+  }
